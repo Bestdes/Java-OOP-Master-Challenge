@@ -1,0 +1,125 @@
+public void addLettuce() {
+        if (addOnItemTracker < 4) {
+            if (addOnItemTracker == 0){
+                this.addOn1 = "Lettuce";
+                this.addOn1Price = lettucePrice;
+            }
+            if (addOnItemTracker == 1){
+                this.addOn2 = "Lettuce";
+                this.addOn2Price = lettucePrice;
+            }
+            if (addOnItemTracker == 2){
+                this.addOn3 = "Lettuce";
+                this.addOn3Price = lettucePrice;
+            }
+            if (addOnItemTracker == 3){
+                this.addOn4 = "Lettuce";
+                this.addOn4Price = lettucePrice;
+            }
+            this.totalPrice += lettucePrice;
+            this.addOnItemTracker++;
+        }
+    }
+
+    public void addTomato() {
+        if (addOnItemTracker < 4) {
+            if (addOnItemTracker == 0){
+                this.addOn1 = "Tomato";
+                this.addOn1Price = tomatoPrice;
+            }
+            if (addOnItemTracker == 1){
+                this.addOn2 = "Tomato";
+                this.addOn2Price = tomatoPrice;
+            }
+            if (addOnItemTracker == 2){
+                this.addOn3 = "Tomato";
+                this.addOn3Price = tomatoPrice;
+            }
+            if (addOnItemTracker == 3){
+                this.addOn4 = "Tomato";
+                this.addOn4Price = tomatoPrice;
+            }
+            this.totalPrice += tomatoPrice;
+            this.addOnItemTracker++;
+        }
+    }
+
+    public void addPickle() {
+        if (addOnItemTracker < 4) {
+            if (addOnItemTracker == 0){
+                this.addOn1 = "Pickle";
+                this.addOn1Price = picklePrice;
+            }
+            if (addOnItemTracker == 1){
+                this.addOn2 = "Pickle";
+                this.addOn2Price = picklePrice;
+            }
+            if (addOnItemTracker == 2){
+                this.addOn3 = "Pickle";
+                this.addOn1Price = picklePrice;
+            }
+            if (addOnItemTracker == 3){
+                this.addOn4 = "Pickle";
+                this.addOn4Price = picklePrice;
+            }
+            this.totalPrice += picklePrice;
+            this.addOnItemTracker++;
+        }
+    }
+
+    public void addOnion() {
+        if (addOnItemTracker < 4) {
+            if (addOnItemTracker == 0){
+                this.addOn1 = "Onion";
+                this.addOn1Price = onionPrice;
+            }
+            if (addOnItemTracker == 1){
+                this.addOn2 = "Onion";
+                this.addOn2Price = onionPrice;
+            }
+            if (addOnItemTracker == 2){
+                this.addOn3 = "Onion";
+                this.addOn3Price = onionPrice;
+            }
+            if (addOnItemTracker == 3){
+                this.addOn4 = "Onion";
+                this.addOn4Price = onionPrice;
+            }
+            this.totalPrice += onionPrice;
+            this.addOnItemTracker++;
+        }
+    }
+	
+	
+	------------------------------------------------------------------
+	
+	
+	private void addHealthySauce() {
+        if (getAddOnItemTracker() + this.healthyAddOnTracker < 6) {
+            if (healthyAddOnTracker == 0){
+                this.healthyAddOn1 = "Healthy Sauce";
+                this.healthyAddOn1Price = this.healthySaucePrice;
+            }
+            if (healthyAddOnTracker == 1){
+                this.healthyAddOn2 = "Healthy Sauce";
+                this.healthyAddOn2Price = this.healthySaucePrice;
+            }
+            healthyBurgerTotal += healthySaucePrice;
+            this.healthyAddOnTracker++;
+        }
+    }
+
+    private void addHealthyCheese() {
+        if (getAddOnItemTracker() + this.healthyAddOnTracker < 6) {
+            if (healthyAddOnTracker == 0){
+                this.healthyAddOn1 = "Healthy Cheese";
+                this.healthyAddOn1Price = this.healthyCheesePrice;
+            }
+            if (healthyAddOnTracker == 1){
+                this.healthyAddOn2 = "Healthy Cheese";
+                this.healthyAddOn2Price = this.healthyCheesePrice;
+            }
+            healthyBurgerTotal += healthyCheesePrice;
+            this.healthyAddOnTracker++;
+        }
+    }
